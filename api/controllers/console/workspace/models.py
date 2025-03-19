@@ -89,6 +89,7 @@ class ModelProviderModelApi(Resource):
         tenant_id = current_user.current_tenant_id
 
         model_provider_service = ModelProviderService()
+        print(model_provider_service)
         models = model_provider_service.get_models_by_provider(tenant_id=tenant_id, provider=provider)
 
         return jsonable_encoder({"data": models})

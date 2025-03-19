@@ -87,7 +87,9 @@ class ModelProviderService:
         :return:
         """
         # Get all provider configurations of the current workspace
+        print(tenant_id)
         provider_configurations = self.provider_manager.get_configurations(tenant_id)
+        print(provider_configurations)
 
         # Get provider available models
         return [

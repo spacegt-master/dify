@@ -27,3 +27,4 @@ def test_gmpy2_pkcs10aep_cipher() -> None:
     encrypted_by_private_key = private_cipher_rsa.encrypt(message=raw_text_bytes)
     decrypted_by_private_key = private_cipher_rsa.decrypt(encrypted_by_private_key)
     assert decrypted_by_private_key == raw_text_bytes
+
